@@ -27,4 +27,4 @@ npm start
 node --env-file-if-exists=.env --input-type=module -e 'import {DatabaseSync} from "node:sqlite"; const db = new DatabaseSync((process.env.DATA_DIR || "data") + "/behy.sqlite", { readOnly: true }); console.table(db.prepare("SELECT id, email, message, created FROM messages ORDER BY id DESC").all());'
 ```
 
-بخش پلاس درخواست‌ها را در جدول `plus` ذخیره می‌کند. درگاه پرداخت یا سرویس اشتراک پولی متصل نیست. بخش‌های یوتیوب به جستجوی مرتبط و بخش ایجنت‌ها به ابزارهای بیرونی پیوند دارند.
+بخش پلاس درخواست‌ها را در جدول `plus` ذخیره می‌کند. درگاه پرداخت یا سرویس اشتراک پولی متصل نیست. بخش‌های یوتیوب وضعیت ساخت کانال‌های اختصاصی را نشان می‌دهند و بخش ایجنت‌ها به ابزارهای بیرونی پیوند دارد.
