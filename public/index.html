@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081210">
+<title>صالیصفاجلاییکلطاتوکلیگلغذار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<script type="module" src="/app.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="/" aria-label="خانه"><span class="logo" data-icon="layers"></span><b>بهی<span>.</span><small>BEHY</small></b></a>
+<nav aria-label="منوی اصلی"><a class="current" href="#">خانه</a><a href="#worlds">بخش‌ها</a><a href="#plus">عضویت پلاس</a></nav>
+<div class="account"><button class="plain" data-open="login">ورود</button><button class="primary" data-open="signup">ثبت‌نام <span data-icon="arrow"></span></button></div>
+</div></header>
+<main class="wrap">
+<section class="hero" aria-labelledby="headline">
+<canvas id="waves" aria-hidden="true"></canvas>
+<div class="hero-content"><div class="pill"><i></i> دنیای دیجیتال بهی</div>
+<h1 id="headline">صالیصفاجلاییکلطاتوکلیگلغذار</h1>
+<p>از تماشای ویدیو تا کشف ابزارهای هوش مصنوعی،<br> همه در یک جا.</p>
+<a class="primary hero-action" href="#worlds">کشف بخش‌ها <span data-icon="down"></span></a></div>
+<div class="hero-coordinate" aria-hidden="true">BEHY <i></i> DIGITAL SPACE</div>
+</section>
+<section id="worlds" class="worlds">
+<div class="section-label"><span></span> کاوش در بهی</div>
+<h2>دنیای خودت را پیدا کن</h2>
+<div class="cards">
+<article class="card video"><div class="card-art"><span data-icon="video"></span></div><h3>یوتوب ضالحین</h3><p>ویدیوهای فرهنگی و مذهبی را در یوتیوب پیدا کن.</p><a href="https://www.youtube.com/results?search_query=صالحین" target="_blank" rel="noopener">مشاهده ویدیوها <span data-icon="arrow"></span></a></article>
+<article class="card youth"><div class="card-art"><span data-icon="bolt"></span></div><h3>یوتویوب نوجوان</h3><p>از آموزش و سرگرمی تا ایده‌های تازه برای نوجوان‌ها.</p><a href="https://www.youtube.com/results?search_query=آموزش+و+سرگرمی+نوجوان" target="_blank" rel="noopener">کاوش در ویدیوها <span data-icon="arrow"></span></a></article>
+<article class="card agents"><div class="card-art"><span data-icon="bot"></span></div><h3>ایجنت‌های هوش مصنوعی</h3><p>ابزارهای هوشمند برای یادگیری، نوشتن و ایده‌پردازی.</p><button class="card-link" data-open="agents">دیدن ابزارها <span data-icon="arrow"></span></button></article>
+</div>
+</section>
+<section id="plus" class="plus">
+<div class="stars" aria-hidden="true">✧ <b>✦</b> ✧ <em>✦</em> ✧</div>
+<div class="plus-copy"><div class="pill"><span data-icon="spark"></span> BEHY PLUS</div><h2>عضویت در پلاس</h2><p>برای دریافت خبرهای عضویت پلاس اعلام علاقه‌مندی کن.</p><button class="gold" id="join-plus">درخواست عضویت <span data-icon="arrow"></span></button></div>
+</section>
+</main>
+<footer class="wrap footer"><a class="brand" href="#"><span class="logo" data-icon="layers"></span><b>بهی<span>.</span></b></a><span>بهی · دنیای دیجیتال تو</span></footer>
+<button id="support-toggle" class="support-toggle" type="button" aria-controls="support" aria-expanded="false"><span data-icon="chat"></span> پشتیبانی <i></i></button>
+<section id="support" class="support-panel" aria-labelledby="support-title" hidden>
+<header><h2 id="support-title">پیام به پشتیبانی</h2><button class="close" id="support-close" aria-label="بستن">×</button></header>
+<form id="support-form"><label>ایمیل برای پاسخ<input name="email" type="email" required maxlength="254"></label><label>پیام<textarea name="message" rows="4" required maxlength="2000"></textarea></label><button class="primary">ارسال پیام</button><p class="status" role="status"></p></form>
+</section>
+<dialog id="modal"><button class="close" id="modal-close" aria-label="بستن">×</button><div id="modal-content"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: behy-client
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "24.22.1"
